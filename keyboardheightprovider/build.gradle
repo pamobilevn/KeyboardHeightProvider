@@ -123,29 +123,6 @@ artifacts {
 }
 
 
-bintray {
-    user = BINTRAY_USER
-    key = BINTRAY_KEY
-    configurations = ['archives']
-
-    pkg {
-        repo = bintrayRepo
-        name = bintrayName
-        userOrg = developerId
-        desc = libraryDescription
-        licenses = allLicenses
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        publish = true
-        publicDownloadNumbers = true
-        version {
-            desc = libraryDescription
-            vcsTag = version
-            released = new Date()
-        }
-    }
-}
-
 repositories {
     mavenCentral()
 }
